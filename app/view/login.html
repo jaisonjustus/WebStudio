@@ -1,0 +1,32 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <link rel="stylesheet" href="{$site}media/styles/test.css#" type="text/css" media="screen"/>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="form-wrapper">
+                <form name="loginForm" action="{$site}profile/login" method="POST">
+                    <ul>
+                        <li>
+                            {$userName}
+                        </li>
+                        <li>
+                            {$passWord}
+                        </li>
+                        <li>
+                            <input type="submit" name="submit"/>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

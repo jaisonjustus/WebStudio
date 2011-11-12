@@ -1,0 +1,87 @@
+/* 
+    Document   : reset
+    Created on : Sep 4, 2011, 10:48:22 AM
+    Author     : Jaison Justus.
+    Description: HTML Element Reset.
+*/
+
+body,div,h1,span,p    {
+    margin:0;
+    padding: 0;
+    border: 0;
+}
+
+input[type=button]  {
+    
+}
+
+h1  {
+    font: 27px Arial;
+    color: white;
+    line-height: 31px;
+    margin-bottom: 10px;
+}
+
+input[type=file]    {
+    font: 12px Arial;
+    color:white;
+}
+
+.global-message-black {
+    background-color: #171817;
+    font:12px Arial;
+    font-style: italic;
+    color:white;
+    padding:3px 3px 3px 3px;
+    margin:10px 5px 5px 0px;
+}
+
+.global-message-white {
+    /*    background-color: #171817;*/
+    font:12px Arial;
+    font-style: italic;
+    color:white;
+    padding:3px 3px 3px 3px;
+    margin:10px 0px 10px 0px;
+}
+
+.badge {
+    margin:2px 2px 2px 2px;
+    float:left;
+    overflow: hidden;
+}
+
+.badge-arrow    {
+    width: 17px;
+    height:24px;
+    background-image: url(../images/app/badge-arrow.png);
+    float:right;
+}
+
+.badge-content  {
+    height:17px;
+    background-color: #171817;
+    font:bold 12px Arial;
+    color:white;
+    padding:4px 4px 3px 4px;
+    float:left;
+}
+
+.button {
+    height: 30px;
+    background-image: url(../images/app/button.png);
+    border:1px solid #999999;
+    font:bold 13px Arial;
+    color:#444343;
+    float: right;
+}
+
+.label-message-black {
+/*    background-color: #171817;*/
+    font:12px Arial;
+    font-style: italic;
+    color:#838181;
+    padding:3px 3px 3px 3px;
+    margin:0px 0px 0px 0px;
+    float:left;
+}

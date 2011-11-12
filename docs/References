@@ -1,0 +1,37 @@
+Doctrine 2 Setup : http://www.doctrine-project.org/docs/orm/2.0/en/reference/configuration.html
+Doctrine 2 Library : http://www.doctrine-project.org/
+
+Doctrine tutorials : 
+http://thingswithpixels.com/blog/post/getting-started-with-doctrine-2-part-1
+http://thingswithpixels.com/blog/post/getting-started-with-doctrine-2-part-2
+
+# Doctrine test starts;
+        
+    # Insert Query;
+    $user = new MasterUser;    
+    $user->setEmail('hawk@php.net');
+    $user->setUserName('hawk');
+    $user->setPassWord('php');
+    $this->registry->em->persist($user);
+    $this->registry->em->flush();
+
+    # Find query;
+    $user = $this->registry->em->find('MasterUser',1);
+    echo $user->getEmail();
+    echo '<pre>';
+
+    # Custuom Query;
+    $queryBuilder = $this->registry->em->createQueryBuilder();
+    $queryBuilder->add('select', 'u')
+            ->add('from','MasterUser u');
+
+
+    $query = $queryBuilder->getQuery();
+    $userdetails = $query->getResult();
+
+    foreach ($userdetails as $user)   {
+        echo $user->getEmail() . '<br/>';
+}
+
+
+# Doctrine test ends;

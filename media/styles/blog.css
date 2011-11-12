@@ -1,0 +1,68 @@
+/* 
+    Document   : blog
+    Created on : Oct 8, 2011, 8:26:25 AM
+    Author     : jaisonjustus
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+.blog-component-holder  {
+    width:900px;
+    height:auto;
+    overflow: hidden;
+    padding:15px 0px 15px 0px;
+    
+}
+
+.blog-component-holder label    {
+    font:19px Arial;
+    color:#171817;
+    margin:0px 15px 0px 0px;
+    float: left;
+}
+
+.blog-component-holder input[type=text] {
+    width: 98%;
+    height:25px;
+    background-image: url(../images/app/textbox.png);
+    padding:0; margin:0;
+    border:1px solid #e2e1e1;
+    font:14px Arial;
+    padding:0px 0px 0px 10px;
+    margin:10px 0px 0px 0px;
+}
+
+#blog-editor-holder    {
+    margin:0px 0px 15px 0px;
+}
+
+#blog-posts {
+    width: 450px;
+    height:auto;
+    padding:20px 20px 20px 20px;
+    margin-top:10px;
+}
+
+.post   {
+    width:100%;
+    height: auto;
+    margin:5px 0px 5px 0px;
+}
+
+.post h2    {
+    font:bold 20px Arial;
+    padding:0;
+    margin:0px 0px 5px 0px;
+    color:#171817;
+}
+
+.post p {
+    font:15px Arial;
+    margin:5px 0px 5px 0px;
+    color:#171817;
+}
