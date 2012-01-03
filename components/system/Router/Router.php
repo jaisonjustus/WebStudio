@@ -1,31 +1,67 @@
 <?php
 
 /**
- * Description of Router
+ * Router handles the parsing and loading of the action from the controller. Router 
+ * take the parameter(controller/action) from the url.
  *
  * @author Jaison Justus
- * @version 1.0
+ * @version 0.1
+ * @package Router
  */
 
 class Router {
 
+    /*
+     * Variable to handle the registry object.
+     * 
+     * @access private
+     * @var RegistryObject 
+     */
     private $registry;
+    
+    /**
+     * Variable to andle the url.
+     * 
+     * @access private
+     * @var string 
+     */
     private $path;
+    
+    /**
+     * 
+     */
     private $args = array();
     public $file;
     public $controller;
     public $action;
     public $template;
 
+    /**
+     *
+     * @param RegistryObject $registry 
+     */
     function __construct($registry) {
         $this->registry = $registry;
         $this->template = new RainTPL;
     }
 
+    /**
+     * @author Jaison Justus
+     * @version 0.1
+     * 
+     * @access public
+     * @param string $path 
+     */
     public function setPath($path) {
         $this->path = $path;
     }
 
+    /**
+     * @author Jaison Justus
+     * @version 0.1
+     * 
+     * @access public
+     */
     public function loader() {
         $this->getController();
 
@@ -60,6 +96,12 @@ class Router {
         }
     }
 
+    /**
+     * @author Jaison Justus
+     * @version 0.1
+     * 
+     * @access public
+     */
     private function getController() {
         $route = (empty($_GET['rt'])) ? '' : $_GET['rt'];
 
